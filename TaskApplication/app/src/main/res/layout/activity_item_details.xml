@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ItemDetailsActivity"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Deatials"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/item_name_hdr"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="Item Name :"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/item_name"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/available_qty_hdr"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="Available Qty :"/>
+        <TextView
+            android:id="@+id/available_qty"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/item_cost_hdr"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="Item Cost :"/>
+        <TextView
+            android:id="@+id/item_cost"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purchase"/>
+
+
+
+</LinearLayout>
